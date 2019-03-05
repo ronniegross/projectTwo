@@ -1,7 +1,9 @@
-const Snowboard = require('../models/Ski.js');
+const Snowboard = require('../models/Snowboard.js');
 
 const snowboardController = {
     index: (req, res) => {
-        res.send('sup')
+        res.render('snowboard/snowboardcart')
     }
 };
+
+module.exports = snowboardController

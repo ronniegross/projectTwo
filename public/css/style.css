@@ -37,6 +37,20 @@ h1#gnarniaTitle  {
     padding: 0;
 }
 
+h1#gnarniaSmall  {
+    font-family: 'Anton', sans-serif;
+    color: #FF4C00;
+    font-size: 40px;
+    letter-spacing: 2px;
+    margin: 0;
+    padding: 0;
+}
+
+h1.tagline {
+    font-family: 'Pacifico', cursive;
+    color: #2F2F2F;
+}
+
 h1 {
     margin: 0;
     padding: 0;
@@ -55,6 +69,12 @@ h3.greyBold {
     font-size: 24px;
     margin: 20px 0 0 0;
     padding-top: 0;
+}
+
+h3.blueBold {
+    font-family: 'Anton', sans-serif;
+    color: #1699AF;
+    font-size: 24px;
 }
 
 h2.link {
@@ -85,5 +105,122 @@ input {
 #acct.submit-btn {
     width: 175px;
 }
+
+.backgroundBar {
+    background-color: white;
+    width: 95vw;
+    height: 10vw;
+    margin: 30px;
+    border-radius: 10px;
+}
+
+.iconContainer {
+    background-color: white;
+    width: 95vw;
+    height: 40vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.sportContainer {
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1.bold {
+    font-family: 'Anton', sans-serif;
+    color: #2F2F2F;
+    margin-top: 10px;
+}
+
+.backgroundBar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#gnarniaTitleGroup {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.iconPic {
+    margin: 20px 0 0 0;
+    width: 60px;
+}
+
+.littleIconContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+} 
+
+h4.bold {
+    font-family: 'Anton', sans-serif;
+    color: #2F2F2F;
+    margin-top: 10px;
+}
+
+#cart {
+    margin-right: 15px;
+}
+
+input#submitSnowSki.submit-btn {
+    align-self: flex-end;
+}
+
+input#submit.submit-btn {
+    width: 150px;
+}
+
+h3.blueBoldPlus {
+    font-family: 'Anton', sans-serif;
+    color: #1699AF;
+    font-size: 60px;
+}
+
+.selectBtn {
+    background-color: #1699AF;
+    color: white;
+    font-family: 'Anton', sans-serif;
+    letter-spacing: 2px;
+    border: none;
+    width: 60px;
+    font-size: 24px;
+}
+.selectBtnBig {
+    background-color: #1699AF;
+    color: white;
+    font-family: 'Anton', sans-serif;
+    letter-spacing: 2px;
+    border: none;
+    width: 110px;
+    font-size: 24px;
+}
+
+.bodyContainer {
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 1000px;
+}
+
+div#purchase.iconContainer {
+    height: 60vw;
+}
+
 
 

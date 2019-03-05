@@ -15,8 +15,15 @@ const userController = {
         res.send('create')
     },
     show: (req, res) => {
-        res.send('show')
+        User.find().then(users => {
+            res.render('user/snoworski', { users })
+        })
     },
+    // show: (req, res) => {
+    //     User.find().then(users => {
+    //         res.render('user/snowboardcart', { users })
+    //     })
+    // },
     edit: (req, res) => {
         res.send('edit')
     },
