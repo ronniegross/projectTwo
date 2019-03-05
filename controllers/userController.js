@@ -3,11 +3,13 @@ const User = require('../models/User');
 const userController = {
     index: (req, res) => {
         User.find().then(users => {
-            res.render('user/index', { users })
+            res.render('user/login', { users })
         })
     },
     new: (req, res) => {
-        res.send('new')
+        User.find().then(users => {
+            res.render('user/signup', { users })
+        })
     },
     create: (req, res) => {
         res.send('create')

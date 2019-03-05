@@ -1,2 +1,14 @@
-{{#each users}}
-{{/each}}
+<div class="loginBackground">
+    <h1 id="welcomeTitle">welcome to</h1>
+    <h1 id="gnarniaTitle">gnarnia</h1>
+    <h2>login</h2>
+    <div class="existingEmail">
+        <input type="text" name="email" id="existingEmail" placeholder="email" value="{{user.email}}">
+    </div>
+    <div class="existingPassword">
+        <input type="text" name="password" id="existingPassword" placeholder="password" value="{{user.password}}">
+    </div>
+    <input class="submit-btn" type="submit" value="log in"> 
+    <h3 class="greyBold">or</h3>
+    <a href="/signup"><h2 class="link">sign up</h2></a>
+</div>

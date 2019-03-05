@@ -6,7 +6,7 @@ const userController = require('../controllers/userController.js');
 
 // user routes
 router.get('/', userController.index);
-router.get('/new', userController.new)
+router.get('/signup', userController.new)
 router.post('/', userController.create)
 router.get('/:id', userController.show)
 router.get('/:id/edit', userController.edit)

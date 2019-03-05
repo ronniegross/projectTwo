@@ -1,0 +1,89 @@
+body {
+    background-color: #B9F5FF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.loginBackground {
+    background-color: white;
+    border-radius: 10px;
+    height: 600px;
+    width: 350px;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 60px;
+}
+
+h1#welcomeTitle  {
+    font-family: 'Pacifico', cursive;
+    color: #8C8C8C;
+    font-size: 35px;
+    font-weight: 100;
+    margin: 0 0 -15px 0;
+    padding: 0;
+}
+
+h1#gnarniaTitle  {
+    font-family: 'Anton', sans-serif;
+    color: #FF4C00;
+    font-size: 65px;
+    letter-spacing: 3px;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    font-family: 'Pacifico', cursive;
+    color: #2F2F2F;
+    margin: 15px 0 15px 0;
+    padding: 0;
+}
+
+h3.greyBold {
+    font-family: 'Anton', sans-serif;
+    color: #8C8C8C;
+    font-size: 24px;
+    margin: 20px 0 0 0;
+    padding-top: 0;
+}
+
+h2.link {
+    text-decoration: underline;
+}
+
+input {
+    margin-bottom: 10px;
+    font-size: 20px;
+    border: .5px solid #979797;
+    padding: 5px;
+    border-radius: 5px;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+
+.submit-btn {
+    width: 100px;
+    height: 40px;
+    margin-top: 20px;
+    font-family: 'Anton', sans-serif;
+    color: white;
+    background-color: #FF4C00;
+    border: none;
+    font-weight: 100;
+    letter-spacing: 1px;
+}
+
+#acct.submit-btn {
+    width: 175px;
+}
+
+
