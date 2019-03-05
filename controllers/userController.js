@@ -1,8 +1,10 @@
-const User = require('../models/User.js');
+const User = require('../models/User');
 
 const userController = {
     index: (req, res) => {
-        res.send('sup')
+        User.find().then(users => {
+            res.render('user/index', { users })
+        })
     },
     new: (req, res) => {
         res.send('new')

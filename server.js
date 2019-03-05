@@ -5,10 +5,10 @@ const logger = require('morgan');
 const routes = require('./routes/index')
 
 // middleware
+app.set('view engine', 'hbs');
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(methodOverride('_method'));
-app.set('vew engine', 'hbs');
 app.use(express.static(__dirname + '/public'));
 app.use(logger('dev'));
 app.use('/', routes);
