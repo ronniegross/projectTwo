@@ -17,15 +17,41 @@
 <div class="whiteBackground">
     <a href="/snowboardcart"><img class="backArrow" src="https://i.imgur.com/NajKkfU.png" alt="back arrow icon"></a>
     <div class="checkoutContainer">
-        <a href="/snowboardcart"><input class="submit-btn" id="big" type="submit" value="edit cart"></a> 
-        <div class="priceTable">
+        <a href="/snowboardcart"><input class="submit-btn" id="editCartBig" type="submit" value="edit cart"></a> 
+        {{!-- <div class="priceTable">
             <div class="price">
-                
+                <div class="tableTitle" id="price">
+                    <h4>price</h4>
+                </div>
             </div>
             <div class="item">
+                <div class="tableTitle">
+                    <h4>item</h4>
+                </div>
             </div>
+        </div> --}}
+        <div class="itemTableTotal">
+            <table class="checkoutTable">
+                <tr>
+                    <th class="tableTitle" id="titlePrice">price</th>
+                    <th class="tableTitle" id="titleItems">items</th>
+                </tr>
+                <tr>
+                    <th class="leftData">$40</th>
+                    <th class="rightData">snowboard</th>
+                </tr>
+                <tr>
+                    <th class="leftData">$20</th>
+                    <th class="rightData">boots</th>
+                </tr>
+                <tr>
+                    <th class="leftData">$75</th>
+                    <th class="rightData">lift ticket</th>
+                </tr>
+            </table>
+            <h2 class="totalPrice">total: $135</h2>
         </div>
-        <a href="#"><input class="submit-btn" id="big" type="submit" value="submit order"></a> 
+        <a href="#"><input class="submit-btn" id="totalCartBig" type="submit" value="submit order"></a> 
     </div>
 </div>
 

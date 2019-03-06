@@ -282,6 +282,23 @@ input#big.submit-btn {
     margin: 260px 0 0 0;
 }
 
+input#totalCartBig.submit-btn {
+    width: 175px;
+    height: 50px;
+    font-size: 28px;
+    margin: 300px 20px 20px 0;
+    /* margin: 0 20px 20px 0; */
+}
+
+input#editCartBig.submit-btn {
+    width: 175px;
+    height: 50px;
+    font-size: 28px;
+    margin: 300px 20px 20px 0;
+    background-color: #1699AF;
+    /* margin: 0 20px 20px 0; */
+}
+
 .backArrow {
     margin: 50px;
 }
@@ -296,6 +313,73 @@ input#big.submit-btn {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     border-radius: 10px;
 }
+
+.tableTitle {
+    color: #2F2F2F;
+    font-size: 28px;
+    border-bottom: #FF4C00 solid 2px;
+    font-family: 'Pacifico', cursive;
+    width: 200px;
+}
+
+#titlePrice.tableTitle {
+    border-bottom: #FF4C00 solid 2px;
+    border-right: #FF4C00 solid 2px;
+}
+
+.leftData {
+    border-right: #FF4C00 solid 2px;
+}
+
+th {
+    color: #2F2F2F;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-size: 20px;
+}
+
+.itemTableTotal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.totalPrice {
+    margin-top: 75px;
+}
+
+
+
+
+/* #titleItems.tableTitle {
+    border-left: #FF4C00 solid 2px;
+} */
+/* .priceTable {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.tableTitle {
+    border-bottom: #FF4C00 solid 2px;
+    font-family: 'Pacifico', cursive;
+    color: #2F2F2F;
+    font-size: 28px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#price.tableTitle {
+    border-right: #FF4C00 solid 2px;
+}
+
+h4 {
+    margin: 0 0 10px 0;
+} */
