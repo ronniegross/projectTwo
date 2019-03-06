@@ -16,6 +16,7 @@ const skiController = {
             res.render('ski/confirmationsnow', { skis })
         })
     },
+
 };
 
 module.exports = skiController

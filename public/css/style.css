@@ -448,6 +448,25 @@ h4.reserveGear {
     align-items: center;
 }
 
+.poleSize {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.polePrice {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+#skiCartContainer {
+    height: 95vw;
+}
+
 
 
 /* #titleItems.tableTitle {

@@ -1,0 +1,58 @@
+<header>
+    <div class="backgroundBar">
+        <div class="littleIconContainer">
+            <img class="iconPic" src="https://i.imgur.com/3eMDXEF.png" alt="user icon">
+            <h4 class="bold">user logged in</h4>
+        </div>
+        <div id="gnarniaTitleGroup">
+            <h1 id="gnarniaSmall">gnarnia</h1>
+            <h1 class="tagline">lift ticket + gear rental</h1>  
+        </div>
+        <div class="littleIconContainer">
+            <img class="iconPic" id="cart" src="https://i.imgur.com/GwB47Wk.png" alt="user icon">
+            <h4 class="bold">x items in cart</h4>
+        </div>
+    </div>
+</header>
+<div class="whiteBackground">
+    <a href="/snowboardcart"><img class="backArrow" src="https://i.imgur.com/NajKkfU.png" alt="back arrow icon"></a>
+    <div class="checkoutContainer">
+        <a href="/skicart"><input class="submit-btn" id="editCartBig" type="submit" value="edit cart"></a> 
+        {{!-- <div class="priceTable">
+            <div class="price">
+                <div class="tableTitle" id="price">
+                    <h4>price</h4>
+                </div>
+            </div>
+            <div class="item">
+                <div class="tableTitle">
+                    <h4>item</h4>
+                </div>
+            </div>
+        </div> --}}
+        <div class="itemTableTotal">
+            <table class="checkoutTable">
+                <tr>
+                    <th class="tableTitle" id="titlePrice">price</th>
+                    <th class="tableTitle" id="titleItems">items</th>
+                </tr>
+                <tr>
+                    <th class="leftData">$40</th>
+                    <th class="rightData">skis</th>
+                </tr>
+                <tr>
+                    <th class="leftData">$20</th>
+                    <th class="rightData">boots</th>
+                </tr>
+                <tr>
+                    <th class="leftData">$75</th>
+                    <th class="rightData">lift ticket</th>
+                </tr>
+            </table>
+            <h2 class="totalPrice">total: $135</h2>
+        </div>
+        <a href="/confirmationsnow"><input class="submit-btn" id="totalCartBig" type="submit" value="submit order"></a> 
+    </div>
+</div>
+
+
