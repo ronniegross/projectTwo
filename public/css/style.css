@@ -40,7 +40,7 @@ h1#gnarniaTitle  {
 h1#gnarniaSmall  {
     font-family: 'Anton', sans-serif;
     color: #FF4C00;
-    font-size: 40px;
+    font-size: 45px;
     letter-spacing: 2px;
     margin: 0;
     padding: 0;
@@ -49,6 +49,7 @@ h1#gnarniaSmall  {
 h1.tagline {
     font-family: 'Pacifico', cursive;
     color: #2F2F2F;
+    margin-top: -10px;
 }
 
 h1 {
@@ -129,7 +130,7 @@ input {
     margin: 50px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
 }
 
@@ -209,18 +210,92 @@ h3.blueBoldPlus {
     font-size: 24px;
 }
 
-.bodyContainer {
+.liftContainer {
     margin: 50px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     height: 1000px;
 }
 
 div#purchase.iconContainer {
-    height: 60vw;
+    height: 75vw;
 }
 
+.boardPrice {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
+.boardSize {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
+.bootPrice {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bootSize {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ticketPrice {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.liftIcon {
+    margin: 60px;
+}
+
+/* input#big.submit-btn {
+    width: 150px;
+    height: 50px;
+    font-size: 28px;
+    align-self: flex-end;
+    margin: 0 50px 100px 0;
+} */
+
+input#big.submit-btn {
+    width: 150px;
+    height: 50px;
+    font-size: 28px;
+    margin: 260px 0 0 0;
+}
+
+.backArrow {
+    margin: 50px;
+}
+
+.whiteBackground {
+    background-color: white;
+    width: 95vw;
+    height: 40vw;
+}
+
+.checkoutContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}

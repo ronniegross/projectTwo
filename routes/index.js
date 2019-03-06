@@ -15,9 +15,11 @@ router.delete('/:id', userController.delete)
 
 // snowboard routes
 router.get('/snowboardcart', snowboardController.index)
+router.get('/snowboardtotalcart', snowboardController.show)
 
 // ski routes
 // router.get('/skicart', skiController.index)
+
 
 
 module.exports = router
