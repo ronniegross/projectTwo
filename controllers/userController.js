@@ -24,6 +24,21 @@ const userController = {
     //         res.render('user/snowboardcart', { users })
     //     })
     // },
+    userinfo: (req, res) => {
+        User.find().then(users => {
+            res.render('user/userinfo', { users })
+        })
+    },
+    home: (req, res) => {
+        User.find().then(users => {
+            res.render('user/home', { users })
+        })
+    },
+    hometosnoworski: (req, res) => {
+        User.find().then(users => {
+            res.render('user/hometosnoworski', { users })
+        })
+    },
     edit: (req, res) => {
         res.send('edit')
     },

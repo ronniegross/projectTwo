@@ -307,6 +307,7 @@ input#editCartBig.submit-btn {
     background-color: white;
     width: 95vw;
     height: 40vw;
+    border-radius: 10px;
 }
 
 .checkoutContainer {
@@ -351,6 +352,101 @@ th {
     margin-top: 75px;
 }
 
+.thankYouMessage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 100px 120px 0 120px;
+
+}
+
+.confirmation {
+    text-align: center;
+    margin: 20px;
+    color: #2F2F2F;
+}
+
+#catConfirm.confirmation {
+    font-family: 'Anton', sans-serif;
+}
+
+#thanks.confirmation {
+    font-family: 'Pacifico', cursive;
+    color: #FF4C00;
+}
+
+.infoBody {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    margin: -125px;
+}
+.userInfoColumn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+}
+.paymentInfoColumn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+}
+
+h4.orders {
+    color: #1699AF;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    text-decoration: underline;
+    font-size: 26px;
+}
+
+p.deleteAcct {
+    align-self: flex-start;
+    text-decoration: underline;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    color: #2F2F2F;
+    font-size: 16px;
+    margin: 0;
+}
+
+#confirmInfo.submit-btn {
+    width: 160px;
+    letter-spacing: 2px;
+}
+
+#logout.submit-btn {
+    width: 100px;
+    letter-spacing: 2px;
+    background-color: #1699AF;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+#home {
+    margin: 0;
+}
+
+h4.reserveGear {
+    color: #2F2F2F;
+    margin: 20px 0 -10px 0;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+
+
+#snoworskicontainer.whiteBackground {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
 
 
 

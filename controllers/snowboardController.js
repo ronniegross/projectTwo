@@ -11,6 +11,11 @@ const snowboardController = {
             res.render('snowboard/snowboardtotalcart', { snowboards })
         })
     },
+    confirmation: (req, res) => {
+        Snowboard.find().then(snowboards => {
+            res.render('snowboard/confirmationsnow', { snowboards })
+        })
+    },
 };
 
 module.exports = snowboardController
