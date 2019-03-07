@@ -14,31 +14,50 @@
         </div>
     </div>
 </header>
-<div class="whiteBackground" id="userInfoPageBackground">
-    <div class="infoBody" id="home">
-        <div class="userInfoColumn">
-            <h4 class="orders">current order</h4>
-            <h2>user info*</h2>
-            <input type="text" name="firstName" id="firstName" placeholder="first name" value="{{user.firstName}}">
-            <input type="text" name="lastName" id="lastName" placeholder="last name" value="{{user.lastName}}">
-            <input type="text" name="email" id="email" placeholder="email" value="{{user.email}}">
-            <input type="text" name="password" id="password" placeholder="password" value="{{user.password}}">
-            <input type="text" name="age" id="age" placeholder="age" value="{{user.age}}">
-            <p class="deleteAcct">delete account</p>
-        </div>
-        <div class="paymentInfoColumn" id="home">
-            <h4 class="orders">order history</h4>
-            <h2>payment info*</h2>
-            <input type="text" name="fullName" id="fullName" placeholder="full name" value="{{user.firstName}} {{user.lastName}}">
-            <input type="text" name="ccNumber" id="ccNumber" placeholder="credit card number">
-            <input type="text" name="experationDate" id="experationDate" placeholder="experation date">
-            <input type="text" name="ccvCode" id="ccvCode" placeholder="ccv code">
-            <h4 class="reserveGear">confirm info to start new order</h4>
-            <a href="/snoworski"><input class="submit-btn" id="confirmInfo" type="submit" value="confirm info"></a> 
-            <a href="#"><input class="submit-btn" id="logout" type="submit" value="logout"></a> 
+
+
+<form action='#', method='POST'>
+    <div class="whiteBackground" id="userInfoPageBackground">
+        <div class="infoBody" id="home">
+            <div class="userInfoColumn">
+                <h4 class="orders">current order</h4>
+                <h2>user info*</h2>
+                    <div class="firstName">
+                        <input type="text" name="firstName" id="firstName" placeholder="first name" value="{{user.firstName}}">
+                    </div>
+                    <div class="lastName">
+                        <input type="text" name="lastName" id="lastName" placeholder="last name" value="{{user.lastName}}">
+                    </div> 
+                    <div class="email">
+                        <input type="text" name="email" id="email" placeholder="email" value="{{user.email}}">
+                    </div>      
+                    <div class="password">
+                        <input type="text" name="password" id="password" placeholder="password" value="{{user.password}}">
+                    </div>       
+                    <div class="age">
+                        <input type="text" name="age" id="age" placeholder="age" value="{{user.password}}">
+                    </div>   
+                    <input type="submit" value="delete account" class="deleteAcct">
+            </div>
+            <div class="paymentInfoColumn" id="home">
+                <h4 class="orders">order history</h4>
+                <h2>payment info*</h2>
+                    <div class="fullName">
+                        <input type="text" name="fullName" id="fullName" placeholder="full name" value="">
+                    </div>
+                    <div class="ccNumber">
+                        <input type="text" name="ccNumber" id="ccNumber" placeholder="credit card number" value="">
+                    </div>
+                    <div class="expirationDate">
+                        <input type="text" name="expirationDate" id="expirationDate" placeholder="expiration date" value="">
+                    </div>
+                    <div class="ccvCode">
+                        <input type="text" name="ccvCode" id="ccvCode" placeholder="CCV code" value="">
+                    </div>
+                <h4 class="reserveGear">confirm info to start new order</h4>
+                <input class="submit-btn" id="confirmInfo" type="submit" value="confirm info"> 
+                <a href="#"><input class="submit-btn" id="logout" type="submit" value="logout"></a> 
+            </div>
         </div>
     </div>
-    {{!-- {{#if user}} --}}
-       {{!-- <h1>{{}}</h1> --}}
-    {{!-- {{/if}} --}}
-</div>
+</form>
