@@ -1,12 +1,14 @@
 <header>
     <div class="backgroundBar">
-        <a href="/userinfo"><div class="littleIconContainer">
-            <img class="iconPic" src="https://i.imgur.com/3eMDXEF.png" alt="user icon">
-            <h4 class="bold">user logged in</h4>
-        </div></a>
+        <a href="/hometosnoworski">
+            <div class="littleIconContainer">
+                <img class="iconPic" src="https://i.imgur.com/3eMDXEF.png" alt="user icon">
+                <h4 class="bold">sup, {{user.firstName}}?</h4>
+            </div>
+        </a>
         <div id="gnarniaTitleGroup">
             <h1 id="gnarniaSmall">gnarnia</h1>
-            <h1 class="tagline">lift ticket + gear rental</h1>  
+            <h1 class="tagline">lift ticket + gear rental</h1>
         </div>
         <div class="littleIconContainer">
             <img class="iconPic" id="cart" src="https://i.imgur.com/GwB47Wk.png" alt="user icon">
@@ -14,27 +16,92 @@
         </div>
     </div>
 </header>
+
 <div class="whiteBackground" id="userInfoPageBackground">
-    <div class="infoBody" id="home">
-        <div class="userInfoColumn">
-            <h4 class="orders">current order</h4>
-            <h2>user info*</h2>
-            <input type="text" name="firstName" id="firstName" placeholder="first name" value="{{user.firstName}}">
-            <input type="text" name="lastName" id="lastName" placeholder="last name" value="{{user.lastName}}">
-            <input type="text" name="email" id="email" placeholder="email" value="{{user.email}}">
-            <input type="text" name="password" id="password" placeholder="password" value="{{user.password}}">
-            <input type="text" name="age" id="age" placeholder="age" value="{{user.password}}">
-            <p class="deleteAcct">delete account</p>
-        </div>
-        <div class="paymentInfoColumn" id="home">
-            <h4 class="orders">order history</h4>
-            <h2>payment info*</h2>
-            <input type="text" name="fullName" id="fullName" placeholder="full name">
-            <input type="text" name="ccNumber" id="ccNumber" placeholder="credit card number">
-            <input type="text" name="experationDate" id="experationDate" placeholder="experation date">
-            <input type="text" name="ccvCode" id="ccvCode" placeholder="ccv code">
-            <a href="#"><input class="submit-btn" id="confirmInfo" type="submit" value="confirm info"></a> 
-            <a href="#"><input class="submit-btn" id="logout" type="submit" value="logout"></a> 
-        </div>
+    <div class="infoColumn">
+        <h4 class="orders">order history</h4>
+        <a href="/{{user.id}}/payment"><h4 class="orders">payment info</h4></a>
+        <h4 class="orders">click here to submit new order</h4>
     </div>
+    <form action='{{user.id}}/hometosnoworski/?_method=PUT' , method='POST'>
+        <div class="infoColumn">
+            <h2>user info*</h2>
+            <div class="firstName">
+                <input type="text" name="firstName" id="firstName" placeholder="first name" value="{{user.firstName}}">
+            </div>
+            <div class="lastName">
+                <input type="text" name="lastName" id="lastName" placeholder="last name" value="{{user.lastName}}">
+            </div>
+            <div class="email">
+                <input type="text" name="email" id="email" placeholder="email" value="{{user.email}}">
+            </div>
+            <div class="password">
+                <input type="text" name="password" id="password" placeholder="password" value="{{user.password}}">
+            </div>
+            <div class="age">
+                <input type="text" name="age" id="age" placeholder="age" value="{{user.age}}">
+            </div>
+            <input type="submit" value="update account" class="updateAcct">
+        </div>
+    </form>
 </div>
+
+{{!-- <div class="whiteBackground" id="userInfoPageBackground">
+    <div class="infoBody" id="home">
+        <form action='{{user.id}}/hometosnoworski/?_method=PUT' , method='POST'>
+            <div class="userInfoColumn">
+                <h4 class="orders">current order</h4>
+                <h2>user info*</h2>
+                <div class="firstName">
+                    <input type="text" name="firstName" id="firstName" placeholder="first name" value="{{user.firstName}}">
+                </div>
+                <div class="lastName">
+                    <input type="text" name="lastName" id="lastName" placeholder="last name" value="{{user.lastName}}">
+                </div>
+                <div class="email">
+                    <input type="text" name="email" id="email" placeholder="email" value="{{user.email}}">
+                </div>
+                <div class="password">
+                    <input type="text" name="password" id="password" placeholder="password" value="{{user.password}}">
+                </div>
+                <div class="age">
+                    <input type="text" name="age" id="age" placeholder="age" value="{{user.age}}">
+                </div>
+                <input type="submit" value="update account" class="updateAcct">
+            </div>
+        </form>
+        <form class="delete-form" action='/'?_method=DELETE , method='DELETE'>
+            <input type="submit" value="delete account" class="delete">
+        </form> --}}
+{{!-- <form class="delete-form" action='/{{payment.id}}?_method=DELETE' , method='DELETE'>
+            <input type="submit" value="delete payment info" class="delete">
+        </form> --}}
+{{!-- <form action='{{user.id}}/snoworski', method='POST'>
+            <div class="paymentInfoColumn" id="home">
+                <h4 class="orders">order history</h4>
+                <h2>payment info*</h2>
+                <div class="fullName">
+                    <input type="text" name="fullName" id="fullName" placeholder="full name" value={{payment.fullName}}>
+                </div>
+                <div class="ccNumber">
+                    <input type="text" name="ccNumber" id="ccNumber" placeholder="credit card number"
+                        value={{payment.ccNumber}}>
+                </div>
+                <div class="expirationDate">
+                    <input type="text" name="expirationDate" id="expirationDate" placeholder="expiration date"
+                        value={{payment.expirationDate}}>
+                </div>
+                <div class="ccvCode">
+                    <input type="text" name="ccvCode" id="ccvCode" placeholder="CCV code" value={{payment.ccvCode}}>
+                </div>
+                <h4 class="reserveGear">confirm info to start new order</h4>
+                <input type="submit" value="confirm info">
+            </div>
+        </form> --}}
+{{!-- </div>
+</div> --}}
+
+
+{{!-- {{#each users}}
+<h1>{{users}}</h1>
+{{/each}} --}}

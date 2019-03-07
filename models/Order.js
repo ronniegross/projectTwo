@@ -7,6 +7,7 @@ const OrderSchema = new Schema ({
     bootSize: Number,
     poleSize: String,
     liftTicket: Boolean,
+    totalPrice: Number,
 });
 
-module.exports = mongoose.model('OrderInfo', OrderInfoSchema);
+module.exports = mongoose.model('OrderInfo', OrderSchema);

@@ -1,4 +1,4 @@
-<form action='/hometosnoworski', method='POST'>
+<form action='/home', method='POST'>
     <div class="loginBackground">
         <h1 id="welcomeTitle">welcome to</h1>
         <h1 id="gnarniaTitle">gnarnia</h1>
@@ -16,7 +16,7 @@
             <input type="text" name="password" id="password" placeholder="password" value="{{user.password}}">
         </div>
         <div class="age">
-            <input type="text" name="age" id="age" placeholder="age" value="{{user.password}}">
+            <input type="text" name="age" id="age" placeholder="age" value="{{user.age}}">
         </div>
         {{!-- <a href=""><input class="submit-btn" id="submit" type="submit" value="create account"> </a> --}}
         <input type="submit" value="submit">
@@ -24,6 +24,10 @@
 </form>
 
 
+
+{{!-- {{#each users}}
+<h1>{{users}}</h1>
+{{/each}} --}}
 {{!-- 
  {{#each users}}
  <h1>{{id}}</h1>

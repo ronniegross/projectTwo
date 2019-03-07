@@ -1,30 +1,23 @@
 const express = require('express');
 const router = express.Router();
 const userController = require('../controllers/userController.js');
-const snowboardController = require('../controllers/snowboardController.js');
-const skiController = require('../controllers/skiController.js');
+const paymentController = require('../controllers/paymentController.js')
+const orderController = require('../controllers/orderController.js')
 
 // user routes
 router.get('/', userController.index);
 router.get('/signup', userController.new)
-router.post('/hometosnoworski', userController.create)
-router.get('/:id/hometosnoworski', userController.hometosnoworski)
-router.get('/:id/snowOrSki', userController.show)
-router.get('/:id/userinfo', userController.userinfo)
+router.post('/home', userController.create)
 router.get('/:id/home', userController.home)
-router.put('/:id', userController.update)
-router.delete('/:id', userController.delete)
+router.post('/:id/home', userController.edit)
+// router.get('/:id/snowOrSki', userController.show)
+router.delete('/:id/home', userController.delete)
 
-// snowboard routes
-router.get('/snowboardcart', snowboardController.index)
-router.get('/snowboardtotalcart', snowboardController.show)
-router.get('/confirmationsnow', snowboardController.confirmation)
 
-// ski routes
-router.get('/skicart', skiController.index)
-router.get('/skitotalcart', skiController.show)
-
-// router.get('/skicart', skiController.index)
+// payment routes
+router.get('/:userId/payment', paymentController.index)
+router.post('/:userId/payment', paymentController.create)
+router.delete('/:userId/payment', paymentController.delete)
 
 
 
