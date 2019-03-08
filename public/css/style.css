@@ -315,7 +315,7 @@ input#editCartBig.submit-btn {
 .whiteBackground {
     background-color: white;
     width: 95vw;
-    height: 550px;
+    height: 820px;
     border-radius: 10px;
 }
 
@@ -510,6 +510,19 @@ h4.reserveGear {
 
 h2.paymentInfoTitle {
     font-family: 'Anton', sans-serif;
+    margin-bottom: 40px;
+}
+
+.ccicon {
+    width: 300px;
+}
+
+.homeUserIcon {
+    margin-top: 30px;
+}
+
+h2.userInfoHome {
+    font-family: 'Anton', sans-serif;
 }
 
 @media (max-width: 900px) {
@@ -529,7 +542,7 @@ h2.paymentInfoTitle {
         line-height: 20px;
     }
     #userInfoPageBackground {
-        height: 1000px;
+        height: 1800px;
     }
     .orderPage {
         flex-direction: column;
