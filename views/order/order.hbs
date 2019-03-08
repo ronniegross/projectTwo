@@ -12,47 +12,49 @@
         </div>
         <div class="littleIconContainer">
             <img class="iconPic" id="cart" src="https://i.imgur.com/GwB47Wk.png" alt="user icon">
-            <h4 class="bold">x items in cart</h4>
+            <h4 class="bold">cart</h4>
         </div>
     </div>
 </header>
 
 <div class="whiteBackground" id="userInfoPageBackground">
-    <h2>gear order</h2>
-    <form action='/{{user.id}}/order', method='POST'>
-        <div class="orderPage">
-            <div class="mainBodyColumn">
-                <div>
-                    <h2>snowboard - $40</h2>
-                    <input type="text" name="snowboard" id="snowboard" placeholder="small, medium or large" value="{{order.snowboard}}">
+    <div class="whiteBackgroundAlignment">
+        <h2 class="paymentInfoTitle">gear order</h2>
+        <form action='/{{user.id}}/order', method='POST'>
+            <div class="orderPage">
+                <div class="mainBodyColumn">
+                    <div>
+                        <h2>snowboard - $40</h2>
+                        <input type="text" name="snowboard" id="snowboard" placeholder="small, medium or large" value="{{order.snowboard}}">
+                    </div>
+                    <div>
+                        <h2>snowboard boots - $20</h2>
+                        <input type="text" name="snowboardBoots" id="snowboardBoots" placeholder="enter your size" value="{{order.snowboardBoots}}">
+                    </div>
                 </div>
-                <div>
-                    <h2>snowboard boots - $20</h2>
-                    <input type="text" name="snowboardBoots" id="snowboardBoots" placeholder="enter your size" value="{{order.snowboardBoots}}">
+                <div class="mainBodyColumn">
+                    <div>
+                        <h2>skis - $40</h2>
+                        <input type="text" name="ski" id="ski" placeholder="small, medium or large" value="{{order.ski}}">
+                    </div>
+                    <div>
+                        <h2>ski boots - $20</h2>
+                        <input type="text" name="skiBoots" id="skiBoots" placeholder="enter your size" value="{{order.skiBoots}}">
+                    </div>
+                    <div>
+                        <h2>poles - $20</h2>
+                        <input type="text" name="poleSize" id="poleSize" placeholder="small, medium or large" value="{{order.poleSize}}">
+                    </div>
+                </div>
+                <div class="mainBodyColumn">
+                    <h2>lift ticket - $75</h2>
+                    <input type="text" name="liftTicket" id="liftTicket" placeholder="yes or no" value="{{order.liftTicket}}">
+                    <input type="submit" value="submit order" class="submit-btn" id="redBig">
                 </div>
             </div>
-            <div class="mainBodyColumn">
-                <div>
-                    <h2>skis - $40</h2>
-                    <input type="text" name="ski" id="ski" placeholder="small, medium or large" value="{{order.ski}}">
-                </div>
-                <div>
-                    <h2>ski boots - $20</h2>
-                    <input type="text" name="skiBoots" id="skiBoots" placeholder="enter your size" value="{{order.skiBoots}}">
-                </div>
-                <div>
-                    <h2>poles - $20</h2>
-                    <input type="text" name="poleSize" id="poleSize" placeholder="small, medium or large" value="{{order.poleSize}}">
-                </div>
-            </div>
-            <div class="mainBodyColumn">
-                <h2>lift ticket - $75</h2>
-                <input type="text" name="liftTicket" id="liftTicket" placeholder="yes or no" value="{{order.liftTicket}}">
-                <input type="submit" value="submit order">
-            </div>
-        </div>
-    </form>
-    <form class="delete-form" action="/{{user.id}}/order?_method=DELETE" method='POST'>
-        <input type="submit" value="delete order" class="delete">
-    </form>
+        </form>
+        <form class="delete-form" action="/{{user.id}}/order?_method=DELETE" method='POST'>
+            <input type="submit" value="delete order" class="submit-btn" id="blueBig">
+        </form>
+    </div>
 </div>

@@ -103,6 +103,15 @@ input {
     letter-spacing: 1px;
 }
 
+#blueBig {
+    background-color: #1699AF;
+    width: 200px; 
+}
+
+#redBig {
+    width: 150px;
+}
+
 #acct.submit-btn {
     width: 175px;
 }
@@ -396,6 +405,7 @@ h4.orders {
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     text-decoration: underline;
     font-size: 26px;
+    margin: 40px 40px 0 40px;
 }
 
 p.deleteAcct {
@@ -473,6 +483,33 @@ h4.reserveGear {
     justify-content: flex-start;
     align-items: center;
     margin: 0 20px 0 20px;
+}
+
+#linkColumn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* padding: 0 20px 0 20px; */
+}
+
+.paymentScreen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.whiteBackgroundAlignment {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h2.paymentInfoTitle {
+    font-family: 'Anton', sans-serif;
 }
 
 
