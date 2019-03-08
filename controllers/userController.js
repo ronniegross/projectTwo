@@ -17,8 +17,8 @@ const userController = {
         })
     },
     edit: (req, res) => {
-        User.findById(req.params.user).then(user => {
-            res.render(`${user.id}/home`)
+        User.findByIdAndUpdate(req.params.id, req.body).then(user => {
+            res.redirect(`/${user.id}/home`)
         })
     },
     show: (req, res) => {
@@ -35,19 +35,8 @@ const userController = {
     //     res.send('update')
     // },
     delete: (req, res) => {
-        User.findByIdAndDelete(req.params.user).then(() => {
-            console.log(user)
-            console.log(`deleted recipe with the id of ${req.params.user}`)
+        User.findByIdAndDelete(req.params.id).then(user => {
             res.redirect('/')
-        })
-    },
-    delete: (req, res) => {
-        User.findById(req.params.userId).then(user => {
-            Payment.findByIdAndDelete(user.payment).then(payment => {
-                User.findByIdAndUpdate(req.params.userId, {payment: ""}).then(user => {
-                    res.redirect(`/${user.id}/home`)
-                })
-            })
         })
     }
 };

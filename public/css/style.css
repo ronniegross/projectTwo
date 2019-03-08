@@ -460,6 +460,21 @@ h4.reserveGear {
     height: 95vw;
 }
 
+.orderPage {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+.mainBodyColumn {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0 20px 0 20px;
+}
+
 
 
 /* #titleItems.tableTitle {

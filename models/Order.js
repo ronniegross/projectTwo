@@ -2,12 +2,12 @@ const mongoose = require('../db/connection.js');
 const Schema = mongoose.Schema;
 
 const OrderSchema = new Schema ({
-    skiBoardType: String,
-    skiBoardSize: String,
-    bootSize: Number,
+    snowboard: String,
+    snowboardBoots: String,
+    ski: String,
+    skiBoots: String,
     poleSize: String,
-    liftTicket: Boolean,
-    totalPrice: Number,
+    liftTicket: String,
 });
 
-module.exports = mongoose.model('OrderInfo', OrderSchema);
+module.exports = mongoose.model('Order', OrderSchema);

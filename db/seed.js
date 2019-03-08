@@ -11,8 +11,8 @@ const ronnie = new User({
     email: 'blah@blah.com',
     password: '123',
     age: 23,
-    gear: [],
-    paymentInfo: [],
+    order: '',
+    payment: '',
 })
 
 const splewis = new User({
@@ -21,8 +21,8 @@ const splewis = new User({
     email: 'blah1@blah.com',
     password: '123',
     age: 26,
-    gear: [],
-    paymentInfo: [],
+    order: '',
+    payment: '',
 });
 
 const ronnieCC = new Payment({
@@ -40,12 +40,12 @@ const spCC = new Payment({
 })
 
 const ronnieOrder = new Order ({
-    skiBoardType: 'Snowboard',
-    skiBoardSize: 'Small',
-    bootSize: 7.5,
-    poleSize: 'None',
-    liftTicket: true,
-    totalPrice: 135,
+    snowboard: 'large',
+    snowboardBoots: 10,
+    ski: 'none',
+    skiBoots: 'none',
+    poleSize: 'none',
+    liftTicket: 'yes',
 });
 
 
